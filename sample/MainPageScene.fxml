@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+
+   <children>
+
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff9400" height="78.0" layoutX="201.0" layoutY="330.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff9400" height="104.0" layoutX="589.0" layoutY="431.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fb4747" height="5.0" layoutX="637.0" layoutY="394.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="44.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff9400" height="5.0" layoutX="263.0" layoutY="410.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3f8cff" height="5.0" layoutX="633.0" layoutY="420.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="44.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="462.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="106.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff9400" height="5.0" layoutX="203.0" layoutY="505.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="148.0" />
+      <Button layoutX="666.0" layoutY="386.0" mnemonicParsing="false" onAction="#ThermalScene" prefHeight="52.0" prefWidth="114.0" style="-fx-background-color: #fb4747" text="Thermal Subsystem" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="331.0" layoutY="386.0" mnemonicParsing="false" onAction="#CommunicationsScene" prefHeight="52.0" prefWidth="141.0" style="-fx-background-color: #BA55D3" text="Communications Subsystem" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+      <Button layoutX="345.0" layoutY="466.0" mnemonicParsing="false" onAction="#ControlScene" prefHeight="52.0" prefWidth="114.0" style="-fx-background-color: #4EFF3F" text="Control Subsystem" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="342.0" layoutY="307.0" mnemonicParsing="false" onAction="#OpticalPayloadScene" prefHeight="52.0" prefWidth="126.0" style="-fx-background-color: #e3ee16" text="Optical Payload Subsystem" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="502.0" layoutY="386.0" mnemonicParsing="false" onAction="#PowerScene" prefHeight="52.0" prefWidth="141.0" style="-fx-background-color: #3F8CFF" text="Electrical Power Subsystem" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+      <Button layoutX="158.0" layoutY="386.0" mnemonicParsing="false" onAction="#StructureScene" prefHeight="52.0" prefWidth="114.0" style="-fx-background-color: #ff9400" text="Structural Subsystem" textAlignment="CENTER" wrapText="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/steph/OneDrive/Desktop/Conceptual%20Design%20Files/Images/Steve%20logo%20final.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="235.0" fitWidth="549.0" layoutX="117.0" layoutY="-30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/steph/OneDrive/Desktop/Conceptual%20Design%20Files/Images/S1Render.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="586.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/steph/OneDrive/Desktop/Conceptual%20Design%20Files/Images/upei_shield_logo_rust%20text_high%20res.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="272.0" layoutY="234.0" text="SpudNik-1 Sub Systems" textFill="#f81d05">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font></Label>
+      <Line endX="700.0" layoutX="101.0" layoutY="233.0" startX="-100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="468.0" layoutY="328.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="106.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="459.0" layoutY="495.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="112.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="59.0" layoutX="567.0" layoutY="439.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="66.0" layoutX="569.0" layoutY="329.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3ee16" height="27.0" layoutX="403.0" layoutY="359.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4eff3f" height="27.0" layoutX="403.0" layoutY="439.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff9400" height="97.0" layoutX="201.0" layoutY="438.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff9400" height="5.0" layoutX="202.0" layoutY="530.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="392.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff9400" height="5.0" layoutX="202.0" layoutY="329.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="141.0" />
+      <TextField fx:id="UserPathField" layoutX="94.0" layoutY="186.0" prefHeight="40.0" prefWidth="537.0" promptText="Please enter path to 'Conceptual Design Files' folder, substituting '//' for the '\'." />
+      <Button layoutX="643.0" layoutY="191.0" mnemonicParsing="false" onAction="#ReadUserPath" text="Enter Folder Path" />
+      <Button layoutX="14.0" layoutY="143.0" mnemonicParsing="false" onAction="#BOM" text="BOM" />
+      <Button layoutX="16.0" layoutY="186.0" mnemonicParsing="false" onAction="#Requirements" text="Req." />
+   </children>
+</Pane>

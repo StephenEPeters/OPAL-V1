@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="665.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="606.0" layoutY="127.0" stroke="BLACK" strokeType="INSIDE" width="192.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="74.0" layoutX="456.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" width="3.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="738.0" layoutY="355.0" stroke="BLACK" strokeType="INSIDE" width="125.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="200.0" layoutY="431.0" stroke="BLACK" strokeType="INSIDE" width="471.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="74.0" layoutX="457.0" layoutY="348.0" stroke="BLACK" strokeType="INSIDE" width="3.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="222.0" layoutX="293.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="326.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="237.0" layoutX="839.0" layoutY="232.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="171.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="180.0" layoutX="666.0" layoutY="269.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="116.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="74.0" layoutX="321.0" layoutY="282.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="276.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="126.0" layoutX="8.0" layoutY="333.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="214.0" />
+      <ImageView fitHeight="88.0" fitWidth="156.0" layoutX="853.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/steph/OneDrive/Desktop/Conceptual%20Design%20Files/Images/RailsPic.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="150.0" layoutX="856.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/steph/OneDrive/Desktop/Conceptual%20Design%20Files/Images/Explodedview.JPG" />
+         </image></ImageView>
+      <Button layoutX="19.0" layoutY="368.0" mnemonicParsing="false" onAction="#CompressiveForce" style="-fx-background-color: #000000" text="Z-Axis Compressive Force" textFill="WHITE" />
+      <Button layoutX="48.0" layoutY="419.0" mnemonicParsing="false" onAction="#VibrationInput" style="-fx-background-color: #000000" text="Launch Vibration" textFill="WHITE" />
+      <Button layoutX="869.0" layoutY="306.0" mnemonicParsing="false" onAction="#CADAssembly" prefHeight="53.0" prefWidth="125.0" text="Assembly SDN-00-00-000" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="865.0" layoutY="408.0" mnemonicParsing="false" onAction="#RailsCAD" prefHeight="53.0" prefWidth="132.0" text="Rails STU-01-01-005" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="332.0" layoutY="317.0" mnemonicParsing="false" text="NX Vibration" />
+      <Button layoutX="462.0" layoutY="317.0" mnemonicParsing="false" text="CAD Simulation" />
+      <Button layoutX="381.0" layoutY="414.0" mnemonicParsing="false" onAction="#StructurePhysicalPhenomena" text="Physical Phenomena">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <TextArea fx:id="MainStructureTextArea" layoutY="467.0" prefHeight="191.0" prefWidth="1010.0" />
+      <Button layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#BacktoMainMenu" text="Back" />
+      <Button layoutX="775.0" layoutY="112.0" mnemonicParsing="false" onAction="#MassBudget" style="-fx-background-color: #ff9400" text="Mass Budget" />
+      <Button layoutX="690.0" layoutY="312.0" mnemonicParsing="false" onAction="#AL6061oRgan" text="Al-6061" />
+      <Button layoutX="677.0" layoutY="398.0" mnemonicParsing="false" onAction="#RailDrawing" text="Dimensions" />
+      <ImageView fitHeight="191.0" fitWidth="227.0" layoutX="345.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../CodeImages/Buckling.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="698.0" layoutY="280.0" text="oRgans">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="871.0" layoutY="241.0" text="Subset of Parts">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="97.0" layoutY="337.0" text="Inputs">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="396.0" layoutY="287.0" text="Physical Effects">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="308.0" layoutY="11.0" text="State (CubeSat stresses and failure modes)">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="570.0" layoutY="404.0" text="Activate" />
+      <Label layoutX="350.0" layoutY="241.0" text="Interpreted as" />
+      <Label layoutX="462.0" layoutY="384.0" text="Create" />
+      <Label layoutX="266.0" layoutY="404.0" text="Activate" />
+      <Label layoutX="788.0" layoutY="333.0" text="Create" />
+      <Label layoutX="677.0" layoutY="107.0" text="Create" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1114.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="561.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" width="263.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="31.0" layoutX="725.0" layoutY="72.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="151.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="231.0" layoutX="426.0" layoutY="245.0" stroke="BLACK" strokeType="INSIDE" width="3.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="729.0" layoutY="335.0" stroke="BLACK" strokeType="INSIDE" width="201.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="161.0" layoutY="467.0" stroke="BLACK" strokeType="INSIDE" width="636.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="127.0" layoutX="225.0" layoutY="291.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="398.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="274.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="290.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="362.0" layoutX="885.0" layoutY="137.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="219.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="286.0" layoutX="700.0" layoutY="208.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="111.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="231.0" layoutY="248.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="161.0" />
+      <ImageView fitHeight="78.0" fitWidth="114.0" layoutX="963.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../CodeImages/UHF%20Trans%20Pic.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="95.0" fitWidth="184.0" layoutX="911.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../CodeImages/S%20BAND%20Transmitter.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="95.0" fitWidth="192.0" layoutX="916.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../CodeImages/UHF%20Antenna%20Pic.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="164.0" layoutX="926.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../CodeImages/S%20Band%20Antenna%20image.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="MainCommunicationsTextArea" layoutX="2.0" layoutY="500.0" prefHeight="169.0" prefWidth="1100.0" />
+      <Button layoutX="29.0" layoutY="388.0" mnemonicParsing="false" onAction="#CommunicationsPowerInput" style="-fx-background-color: #3F8CFF" text="Power Input" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#BacktoMainMenu" text="Back" />
+      <Button layoutX="919.0" layoutY="367.0" mnemonicParsing="false" onAction="#CommunicationsUHFAntCAD" prefHeight="52.0" prefWidth="144.0" text="UHF Antenna CAD COM-02-01-000" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="913.0" layoutY="296.0" mnemonicParsing="false" onAction="#CommunicationsSBandTransCAD" prefHeight="52.0" prefWidth="144.0" text="S-Band Transmitter CAD COM-01-02-000" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="910.0" layoutY="207.0" mnemonicParsing="false" onAction="#CommunicationsSBandAntCAD" prefHeight="52.0" prefWidth="144.0" text="S-Band Antenna CAD COM-01-03-000" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="916.0" layoutY="435.0" mnemonicParsing="false" onAction="#CommunicationsUHFTransCAD" prefHeight="59.0" prefWidth="144.0" text="UHF Transceiver CAD COM-01-01-000" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="31.0" layoutY="354.0" mnemonicParsing="false" onAction="#CommunicationsImageFileSize" style="-fx-background-color: #e3ee16" text="Image Data" />
+      <Button layoutX="281.0" layoutY="44.0" mnemonicParsing="false" onAction="#CommunicationsUplinkBudget" text="Uplink Budget" />
+      <Button layoutX="416.0" layoutY="44.0" mnemonicParsing="false" onAction="#CommunicationsDownlinkBudget" text="Downlink Budget" />
+      <Button layoutX="474.0" layoutY="331.0" mnemonicParsing="false" onAction="#CommunicationsAntennaPatterns" text="Antenna Patterns" />
+      <Button layoutX="479.0" layoutY="377.0" mnemonicParsing="false" onAction="#CommunicationsAntennaGain" text="Antenna Gain" />
+      <Button layoutX="231.0" layoutY="331.0" mnemonicParsing="false" onAction="#CommunicationsAtmospherePolarizationLosses" text="Polarization and Atm. Losses" />
+      <Button layoutX="8.0" layoutY="317.0" mnemonicParsing="false" onAction="#CommunicationsOrbitalParameters" style="-fx-background-color: #000000" text="Orbital Parameters" textFill="WHITE" />
+      <Button layoutX="244.0" layoutY="377.0" mnemonicParsing="false" onAction="#CommunicationsAntennaPointingLosses" text="Antenna Pointing Losses" />
+      <Button layoutX="24.0" layoutY="283.0" mnemonicParsing="false" onAction="#CommunicationsPointingError" style="-fx-background-color:#4eff3f" text="Pointing Error" />
+      <Button layoutX="708.0" layoutY="253.0" mnemonicParsing="false" onAction="#CommunicationsSBandAnt" text="Data Sheet" />
+      <Button layoutX="708.0" layoutY="321.0" mnemonicParsing="false" onAction="#CommunicationsSBandTrans" text="Data Sheet" />
+      <Button layoutX="708.0" layoutY="390.0" mnemonicParsing="false" onAction="#CommunicationsUHFAnt" text="Data Sheet" />
+      <Button layoutX="708.0" layoutY="452.0" mnemonicParsing="false" onAction="#CommunicationsUHFTrans" text="Data Sheet" />
+      <Label layoutX="730.0" layoutY="76.0" text="Data Transfer Values" />
+      <Button layoutX="348.0" layoutY="451.0" mnemonicParsing="false" onAction="#CommunicationsPhysicalPhenomena" text="Physical Phenomena">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="20.0" layoutY="427.0" mnemonicParsing="false" onAction="#CommunicationsMassAllocated" style="-fx-background-color: #ff9400" text="Allocated Mass" />
+      <Label layoutX="60.0" layoutY="255.0" text="Inputs">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="729.0" layoutY="222.0" text="oRgans">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="945.0" layoutY="147.0" text="Subset of Parts">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="331.0" layoutY="18.0" text="State (Data transfer values)">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="316.0" layoutY="172.0" text="Physical Effects" />
+      <ImageView fitHeight="169.0" fitWidth="289.0" layoutX="289.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../CodeImages/Communications%20Change%20of%20State.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="390.0" layoutY="299.0" text="Physical Effects">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="235.0" layoutY="447.0" text="Activate" />
+      <Label layoutX="826.0" layoutY="311.0" text="Create" />
+      <Label layoutX="452.0" layoutY="266.0" text="Interpreted as" />
+      <Label layoutX="581.0" layoutY="449.0" text="Activate" />
+      <Label layoutX="440.0" layoutY="425.0" text="Create" />
+      <Label layoutX="634.0" layoutY="65.0" text="Create" />
+   </children>
+</Pane>

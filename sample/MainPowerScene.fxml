@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="1084.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="268.0" layoutY="431.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="626.0" layoutY="145.0" stroke="BLACK" strokeType="INSIDE" width="236.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="204.0" layoutX="477.0" layoutY="217.0" stroke="BLACK" strokeType="INSIDE" width="3.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="672.0" layoutY="359.0" stroke="BLACK" strokeType="INSIDE" width="273.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="263.0" layoutX="345.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="289.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="201.0" layoutX="883.0" layoutY="255.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="194.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="180.0" layoutX="659.0" layoutY="264.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="164.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="79.0" layoutX="369.0" layoutY="304.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="223.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="201.0" layoutX="17.0" layoutY="252.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="260.0" />
+      <ImageView fitHeight="65.0" fitWidth="158.0" layoutX="913.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/steph/OneDrive/Desktop/Conceptual%20Design%20Files/Images/SolarPanelsPic.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="158.0" layoutX="912.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/steph/OneDrive/Desktop/Conceptual%20Design%20Files/Images/BatteryPic.JPG" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="MainPowerTextArea" layoutY="454.0" prefHeight="282.0" prefWidth="1084.0" />
+      <Button layoutX="103.0" layoutY="413.0" mnemonicParsing="false" onAction="#PowerIncidentFlux" style="-fx-background-color: #000000" text="Solar Flux" textFill="WHITE" />
+      <Button layoutX="890.0" layoutY="393.0" mnemonicParsing="false" onAction="#SolarPanelCAD" prefHeight="57.0" prefWidth="135.0" text="Solar Panels CAD POW-02-00-000" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#BacktoMainMenu" text="Back" />
+      <Button layoutX="890.0" layoutY="306.0" mnemonicParsing="false" onAction="#BatteryCAD" prefHeight="57.0" prefWidth="135.0" text="Battery CAD POW-01-00-000" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="384.0" layoutY="340.0" mnemonicParsing="false" onAction="#PowerAnalysis" text="Power Generation Analysis" />
+      <Button layoutX="395.0" layoutY="413.0" mnemonicParsing="false" onAction="#PowerPhysicalPhenomena" text="Physical Phenomena">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="65.0" layoutY="333.0" mnemonicParsing="false" onAction="#PowerOrbitalParameters" style="-fx-background-color: #000000" text="Orbital Parameters" textFill="WHITE" />
+      <Button layoutX="845.0" layoutY="130.0" mnemonicParsing="false" onAction="#PowerBudget" style="-fx-background-color: #1e90ff" text="Power Budget" />
+      <Button layoutX="671.0" layoutY="307.0" mnemonicParsing="false" onAction="#BatteryDS" text="Battery DataSheet" />
+      <Button layoutX="673.0" layoutY="397.0" mnemonicParsing="false" text="Panels DataSheet" />
+      <ImageView fitHeight="205.0" fitWidth="287.0" layoutX="353.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/steph/OneDrive/Desktop/Conceptual%20Design%20Files/Power%20Results.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="77.0" layoutY="369.0" mnemonicParsing="false" onAction="#PowerMassAllocated" style="-fx-background-color: #ff9400" text="Allocated Mass" />
+      <Label layoutX="428.0" layoutY="313.0" text="Physical Effects">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="126.0" layoutY="260.0" text="Inputs">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="714.0" layoutY="275.0" text="oRgans">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="922.0" layoutY="264.0" text="Subset of Parts">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="404.0" layoutY="9.0" text="State (Charge/Power levels)">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Button layoutX="27.0" layoutY="293.0" mnemonicParsing="false" onAction="#PowerTemperature" style="-fx-background-color: #fb4747" text="Battery Temperature Restrictions" />
+      <Label layoutX="831.0" layoutY="338.0" text="Create" />
+      <Label layoutX="290.0" layoutY="390.0" text="Activate" />
+      <Label layoutX="598.0" layoutY="389.0" text="Activate" />
+      <Label layoutX="482.0" layoutY="271.0" text="Interpreted as" />
+      <Label layoutX="428.0" layoutY="387.0" text="Create" />
+      <Label layoutX="731.0" layoutY="120.0" text="Create" />
+   </children>
+</Pane>

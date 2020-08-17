@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="698.0" prefWidth="1061.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="594.0" layoutY="126.0" stroke="BLACK" strokeType="INSIDE" width="206.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="87.0" layoutX="457.0" layoutY="187.0" stroke="BLACK" strokeType="INSIDE" width="3.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="70.0" layoutX="458.0" layoutY="377.0" stroke="BLACK" strokeType="INSIDE" width="3.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="737.0" layoutY="379.0" stroke="BLACK" strokeType="INSIDE" width="201.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="166.0" layoutY="453.0" stroke="BLACK" strokeType="INSIDE" width="533.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="191.0" layoutY="451.0" stroke="BLACK" strokeType="INSIDE" width="201.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="217.0" layoutX="326.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="272.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="262.0" layoutX="889.0" layoutY="230.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="201.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="234.0" layoutX="684.0" layoutY="248.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="137.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="120.0" layoutX="321.0" layoutY="269.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="245.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="143.0" layoutX="27.0" layoutY="336.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="164.0" />
+      <ImageView fitHeight="68.0" fitWidth="165.0" layoutX="955.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../CodeImages/MagnetorquerPic.JPG" />
+         </image></ImageView>
+      <ImageView fitHeight="68.0" fitWidth="122.0" layoutX="965.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/steph/OneDrive/Desktop/Conceptual%20Design%20Files/Images/ReactionWheelPic.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="77.0" fitWidth="154.0" layoutX="931.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../CodeImages/FlyWheelPic.JPG" />
+         </image></ImageView>
+      <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#BacktoMainMenu" text="Back" />
+      <Button layoutX="715.0" layoutY="344.0" mnemonicParsing="false" onAction="#ReactionWheels" prefHeight="53.0" prefWidth="81.0" text="Reaction Wheels" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="720.0" layoutY="288.0" mnemonicParsing="false" onAction="#FlyWheels" text="Flywheel " />
+      <TextArea fx:id="ControlText" layoutY="494.0" prefHeight="204.0" prefWidth="1087.0">
+         <font>
+            <Font size="11.0" />
+         </font></TextArea>
+      <Button layoutX="712.0" layoutY="437.0" mnemonicParsing="false" onAction="#Magnetorquer" text="Magnetorquer" />
+      <Button layoutX="360.0" layoutY="305.0" mnemonicParsing="false" onAction="#MagnetorquerOptimization" text="Magnetorquer Optimization" />
+      <Button layoutX="334.0" layoutY="343.0" mnemonicParsing="false" onAction="#MotorSpeed" text="Motor Speed" />
+      <Button layoutX="482.0" layoutY="343.0" mnemonicParsing="false" onAction="#ControlSimulation" text="Simulation" />
+      <Button layoutX="56.0" layoutY="437.0" mnemonicParsing="false" onAction="#ControlPowerInput" style="-fx-background-color: #3F8CFF" text="Power Input" />
+      <Button layoutX="897.0" layoutY="286.0" mnemonicParsing="false" onAction="#FlyWheelCAD" prefHeight="53.0" prefWidth="137.0" text="FlyWheel CAD ADC-01-01-003" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="896.0" layoutY="365.0" mnemonicParsing="false" onAction="#ReactionWheelCAD" prefHeight="53.0" prefWidth="164.0" text="Reaction Wheel CAD ADC-01-00-000" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="896.0" layoutY="430.0" mnemonicParsing="false" onAction="#MagnetorquerCAD" prefHeight="53.0" prefWidth="154.0" text="Magnetorquer CAD ADC-02-00-000" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="34.0" layoutY="365.0" mnemonicParsing="false" onAction="#ControlOrbitalParameters" style="-fx-background-color: #000000" text="Orbital Parameters" textFill="WHITE" />
+      <Button layoutX="775.0" layoutY="111.0" mnemonicParsing="false" onAction="#PointingBudget" style="-fx-background-color: #4eff3f" text="Pointing Budget" />
+      <Button layoutX="384.0" layoutY="437.0" mnemonicParsing="false" onAction="#ControlPhysicalPhenomena" text="Physical Phenomena">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <ImageView fitHeight="164.0" fitWidth="255.0" layoutX="337.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../CodeImages/ControlChangeofState.JPG" />
+         </image>
+      </ImageView>
+      <Button layoutX="46.0" layoutY="401.0" mnemonicParsing="false" onAction="#ControlMassAllocated" style="-fx-background-color: #ff9400" text="Allocated Mass" />
+      <Label layoutX="89.0" layoutY="339.0" text="Inputs">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="400.0" layoutY="278.0" text="Physical Effects">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="944.0" layoutY="236.0" text="Subset of Parts">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="354.0" layoutY="18.0" text="State (Resultant satellite motion)">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="727.0" layoutY="259.0" text="oRgans">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="831.0" layoutY="355.0" text="Create" />
+      <Label layoutX="255.0" layoutY="427.0" text="Activate" />
+      <Label layoutX="588.0" layoutY="427.0" text="Activate" />
+      <Label layoutX="362.0" layoutY="236.0" text="Interpreted as" />
+      <Label layoutX="471.0" layoutY="406.0" text="Create" />
+      <Label layoutX="678.0" layoutY="107.0" text="Create" />
+   </children>
+</AnchorPane>
